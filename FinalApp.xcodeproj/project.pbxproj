@@ -12,6 +12,10 @@
 		885A65B22320C0550049E75E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885A65B02320C0550049E75E /* Main.storyboard */; };
 		885A65B42320C0570049E75E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885A65B32320C0570049E75E /* Assets.xcassets */; };
 		885A65B72320C0570049E75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885A65B52320C0570049E75E /* LaunchScreen.storyboard */; };
+		885A65C02320C13C0049E75E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A65BE2320C13C0049E75E /* TableViewCell.swift */; };
+		885A65C12320C13C0049E75E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885A65BF2320C13C0049E75E /* TableViewCell.xib */; };
+		885A65C32320C2250049E75E /* JsonApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A65C22320C2250049E75E /* JsonApiManager.swift */; };
+		885A65C52320C2900049E75E /* ArtistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A65C42320C2900049E75E /* ArtistData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		885A65B32320C0570049E75E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		885A65B62320C0570049E75E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885A65B82320C0570049E75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885A65BE2320C13C0049E75E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		885A65BF2320C13C0049E75E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		885A65C22320C2250049E75E /* JsonApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonApiManager.swift; sourceTree = "<group>"; };
+		885A65C42320C2900049E75E /* ArtistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		882D3BB22320C515005A3AA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885A65AE2320C0550049E75E /* ViewController.swift */,
+				885A65BE2320C13C0049E75E /* TableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		882D3BB32320C52A005A3AA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				885A65BF2320C13C0049E75E /* TableViewCell.xib */,
+				885A65B52320C0570049E75E /* LaunchScreen.storyboard */,
+				885A65B02320C0550049E75E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		882D3BB42320C542005A3AA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				885A65C22320C2250049E75E /* JsonApiManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		882D3BB52320C552005A3AA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885A65C42320C2900049E75E /* ArtistData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		885A65A02320C0550049E75E = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				885A65AC2320C0550049E75E /* AppDelegate.swift */,
-				885A65AE2320C0550049E75E /* ViewController.swift */,
-				885A65B02320C0550049E75E /* Main.storyboard */,
+				882D3BB22320C515005A3AA2 /* Controller */,
+				882D3BB32320C52A005A3AA2 /* View */,
+				882D3BB42320C542005A3AA2 /* ViewModel */,
+				882D3BB52320C552005A3AA2 /* Model */,
 				885A65B32320C0570049E75E /* Assets.xcassets */,
-				885A65B52320C0570049E75E /* LaunchScreen.storyboard */,
 				885A65B82320C0570049E75E /* Info.plist */,
 			);
 			path = FinalApp;
@@ -123,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885A65B72320C0570049E75E /* LaunchScreen.storyboard in Resources */,
+				885A65C12320C13C0049E75E /* TableViewCell.xib in Resources */,
 				885A65B42320C0570049E75E /* Assets.xcassets in Resources */,
 				885A65B22320C0550049E75E /* Main.storyboard in Resources */,
 			);
@@ -135,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885A65C52320C2900049E75E /* ArtistData.swift in Sources */,
+				885A65C02320C13C0049E75E /* TableViewCell.swift in Sources */,
 				885A65AF2320C0550049E75E /* ViewController.swift in Sources */,
+				885A65C32320C2250049E75E /* JsonApiManager.swift in Sources */,
 				885A65AD2320C0550049E75E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
